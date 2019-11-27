@@ -8,8 +8,7 @@
     @foreach($posts as $post)
     <div class="well">
       <h5><a href="/posts/{{$post->id}}">{{$post->title}}</a></h5>
-      <h6>{{$post->body}}</h6>
-      <small>Created on {{$post->created_at}} by {{$post->user->name}}</small>
+      <small>Written by {{$post->user->name}}</small>
     </div>
     @endforeach
   @else
